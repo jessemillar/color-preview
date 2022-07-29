@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <style>
+      body: {
+        background-color: "#000000";
+      }
+    </style>
+  </head>
+  <body></body>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlParams.entries());
+    console.log(params);
+
+    if (params.color) {
+      document.body.style.backgroundColor = params.color;
+    }
+  </script>
+</html>
